@@ -1,0 +1,33 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": [
+     "https://www.googleapis.com/auth/gmail.addons.execute",
+  "https://www.googleapis.com/auth/gmail.readonly",
+  "https://www.googleapis.com/auth/script.locale",
+  "https://www.googleapis.com/auth/userinfo.email",
+  "https://www.googleapis.com/auth/spreadsheets",
+  "https://www.googleapis.com/auth/spreadsheets.readonly",
+  "https://www.googleapis.com/auth/script.external_request",
+  "https://www.googleapis.com/auth/gmail.compose",
+  "https://www.googleapis.com/auth/gmail.modify",
+  "https://mail.google.com/"
+  ],
+  "addOns": {
+    "common": {
+      "name": "UbiDrafts",
+      "logoUrl": "https://ssl.gstatic.com/docs/script/images/mail-icon-128.png",
+      "layoutProperties": {
+        "primaryColor": "#3367D6"
+      },
+      "useLocaleFromApp": true
+    },
+    "gmail": {
+      "homepageTrigger": {
+        "runFunction": "buildAddOn",
+        "enabled": true
+      }
+    }
+  }
+}
